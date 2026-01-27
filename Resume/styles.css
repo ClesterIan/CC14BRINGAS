@@ -1,76 +1,114 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
-  background-color: #f9f9f9;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f5f9;
+    margin: 0;
+    color: #333;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 20px 0;
+/* MAIN RESUME CARD */
+.resume-wrapper-inner {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-header {
-  text-align: center;
+/* HEADER */
+.resume-header {
+    background: #3d4b5c;
+    color: white;
+    padding: 30px;
 }
 
-header img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
+.resume-header .name {
+    font-size: 32px;
+    font-weight: 900;
 }
 
-header h1 {
-  margin: 5px 0;
-  font-size: 28px;
+.resume-header .title {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
-address {
-  font-style: normal;
-  margin-bottom: 10px;
+.resume-header ul {
+    padding: 0;
+    list-style: none;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.resume-header li {
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
+.picture {
+    border-radius: 6px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* NAVIGATION BAR */
+.resume-nav {
+    background: #ffffff;
+    border-bottom: 2px solid #e3e8ee;
+    text-align: center;
+    padding: 12px;
 }
 
-section {
-  margin-bottom: 30px;
-  padding: 0 10px;
+.resume-nav a {
+    margin: 0 18px;
+    font-weight: 600;
+    color: #3d4b5c;
+    text-decoration: none;
 }
 
-section h2 {
-  color: #0077cc;
-  border-bottom: 2px solid #0077cc;
-  display: inline-block;
-  padding-bottom: 5px;
+.resume-nav a:hover {
+    color: #2287C9;
 }
 
-ul {
-  padding-left: 20px;
+.resume-section-title {
+    border-bottom: 3px solid #2f80ed;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+.resume-body {
+    padding: 40px;
+}
+
+
+.resume-timeline-item {
+    border-left: 3px solid #2f80ed;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.resume-timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #2f80ed;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+}
+
+
+.col-lg-3 {
+    background: #f7f9fc;
+    padding: 20px;
+}
+
+
+.skills-section ul li {
+    margin-bottom: 8px;
+}
+
+
+a {
+    color: #2287C9;
+}
+a:hover {
+    color: #339900;
 }
