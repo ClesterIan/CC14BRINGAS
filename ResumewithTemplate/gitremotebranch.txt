@@ -1,0 +1,10 @@
+
+git config --global init.defaultBranch main
+git init
+git remote add origin https://github.com/primusr/7100139-reyes.git
+git checkout main
+git fetch
+
+optional:
+git fetch origin
+git pull --all
